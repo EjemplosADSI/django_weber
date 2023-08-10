@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'towns.apps.TownsConfig',
     'business.apps.BusinessConfig',
     'subsidiary.apps.SubsidiaryConfig',
-    'users.apps.UsersConfig',
+    'user_profile.apps.UserProfileConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

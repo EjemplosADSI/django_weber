@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 from business.models import Busine
 from towns.models import Town
-from users.models import User
+from user_profile.models import UserProfile
 
 
 class Subsidiary(models.Model):
@@ -17,7 +17,7 @@ class Subsidiary(models.Model):
 
     busine = models.ForeignKey(Busine, on_delete=models.CASCADE, verbose_name="Empresa")
     name = models.CharField(max_length=80, unique=True, verbose_name="Nombre")
-    administrator = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Administrador", related_name="administered_subsidiaries")
+    administrator = models.ForeignKey(UserProfile, on_delete=models.CASCADE, verbose_name="Administrador", related_name="administered_subsidiaries")
     direction = models.CharField(max_length=80, unique=True, verbose_name="Direccion")
     town = models.ForeignKey(Town, on_delete=models.CASCADE, verbose_name="Ciudad")
     phone = models.PositiveBigIntegerField(blank=True, null=True, verbose_name="Telefono")
