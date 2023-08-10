@@ -1,0 +1,15 @@
+[
+  {
+    "model": "subsidiary.subsidiary",
+    "pk": 1,
+    "fields": {
+      "name": "Edificio Iraka",
+      "address": "Tranversal 27 2g-02",
+      "phone": "3118864151",
+      "type": "Principal",
+      "status": "Activo",
+      "busine_id": "1",
+      "town_id": "15759"
+    }
+  }
+]

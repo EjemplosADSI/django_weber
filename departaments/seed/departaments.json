@@ -1,0 +1,398 @@
+[
+{
+    "model": "departaments.department",
+    "pk": 5,
+    "fields": {
+        "name": "ANTIOQUIA",
+        "region": "Eje Cafetero - Antioquia",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 8,
+    "fields": {
+        "name": "ATLÁNTICO",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 11,
+    "fields": {
+        "name": "BOGOTÁ. D.C",
+        "region": "Centro Oriente",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 13,
+    "fields": {
+        "name": "BOLÍVAR",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 15,
+    "fields": {
+        "name": "BOYACÁ",
+        "region": "Centro Oriente",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 17,
+    "fields": {
+        "name": "CALDAS",
+        "region": "Eje Cafetero - Antioquia",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 18,
+    "fields": {
+        "name": "CAQUETÁ",
+        "region": "Centro Sur",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 19,
+    "fields": {
+        "name": "CAUCA",
+        "region": "Pacífico",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 20,
+    "fields": {
+        "name": "CESAR",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 23,
+    "fields": {
+        "name": "CÓRDOBA",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 25,
+    "fields": {
+        "name": "CUNDINAMARCA",
+        "region": "Centro Oriente",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 27,
+    "fields": {
+        "name": "CHOCÓ",
+        "region": "Pacífico",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 41,
+    "fields": {
+        "name": "HUILA",
+        "region": "Centro Sur",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 44,
+    "fields": {
+        "name": "LA GUAJIRA",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 47,
+    "fields": {
+        "name": "MAGDALENA",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 50,
+    "fields": {
+        "name": "META",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 52,
+    "fields": {
+        "name": "NARIÑO",
+        "region": "Pacífico",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 54,
+    "fields": {
+        "name": "NORTE DE SANTANDER",
+        "region": "Centro Oriente",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 63,
+    "fields": {
+        "name": "QUINDIO",
+        "region": "Eje Cafetero - Antioquia",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 66,
+    "fields": {
+        "name": "RISARALDA",
+        "region": "Eje Cafetero - Antioquia",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 68,
+    "fields": {
+        "name": "SANTANDER",
+        "region": "Centro Oriente",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 70,
+    "fields": {
+        "name": "SUCRE",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 73,
+    "fields": {
+        "name": "TOLIMA",
+        "region": "Centro Sur",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 76,
+    "fields": {
+        "name": "VALLE DEL CAUCA",
+        "region": "Pacífico",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 81,
+    "fields": {
+        "name": "ARAUCA",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 85,
+    "fields": {
+        "name": "CASANARE",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 86,
+    "fields": {
+        "name": "PUTUMAYO",
+        "region": "Centro Sur",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 88,
+    "fields": {
+        "name": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
+        "region": "Caribe",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 91,
+    "fields": {
+        "name": "AMAZONAS",
+        "region": "Centro Sur",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 94,
+    "fields": {
+        "name": "GUAINÁ",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 95,
+    "fields": {
+        "name": "GUAVIARE",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 97,
+    "fields": {
+        "name": "VAUPÉS",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+},
+{
+    "model": "departaments.department",
+    "pk": 99,
+    "fields": {
+        "name": "VICHADA",
+        "region": "Llano",
+        "status": "Activo",
+        "created_at": "2023-08-08T17:01:26Z",
+        "updated_at": "2023-08-08T17:01:26Z",
+        "deleted_at": null
+    }
+}
+]

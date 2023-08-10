@@ -26,3 +26,6 @@ class Town(models.Model):
             models.Index(fields=['name'], name='municipios_nombre_index'),
             models.Index(fields=['department'], name='mun_depto_id_idx'),
         ]
+
+    def __str__(self):
+        return f"{self.name} - {self.department.name}"

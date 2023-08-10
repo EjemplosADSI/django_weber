@@ -28,3 +28,6 @@ class Department(models.Model):
         db_table = 'departments'
         verbose_name = 'Departamento'
         verbose_name_plural = 'Departamentos'
+
+    def __str__(self):
+        return f"{self.name} - {self.region}"

@@ -20,7 +20,7 @@ class UserProfile(models.Model):
         TARJETA_DE_IDENTIDAD = 'Tarjeta de Identidad', _('Tarjeta de Identidad')
 
     class Role(models.TextChoices):
-        FEMENINO = 'Femenino', _('Femenino')
+        ADMIN = 'Admin', _('Admin')
         EMPLEADO = 'Empleado', _('Empleado')
         CLIENTE = 'Cliente', _('Cliente')
         PROVEEDOR = 'Proveedor', _('Proveedor')
@@ -54,7 +54,11 @@ class UserProfile(models.Model):
         ]
 
     def get_absolute_url(self):
-        return reverse('user_info_detail', kwargs={'pk': self.pk})
+        return reverse('user_profile_detail', kwargs={'pk': self.pk})
+
+    def get_full_address(self):
+        return f"{self.address}, {self.town_id.name} - {self.town_id.department.name}"
 
     def __str__(self):
-        return self.user.username
+        return f"{self.user.first_name} {self.user.last_name}"
+
