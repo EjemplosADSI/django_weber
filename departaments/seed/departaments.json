@@ -3,396 +3,363 @@
     "model": "departaments.department",
     "pk": 5,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "ANTIOQUIA",
         "region": "Eje Cafetero - Antioquia",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 8,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "ATLÁNTICO",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 11,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "BOGOTÁ. D.C",
         "region": "Centro Oriente",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 13,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "BOLÍVAR",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 15,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "BOYACÁ",
         "region": "Centro Oriente",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 17,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CALDAS",
         "region": "Eje Cafetero - Antioquia",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 18,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CAQUETÁ",
         "region": "Centro Sur",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 19,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CAUCA",
         "region": "Pacífico",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 20,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CESAR",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 23,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CÓRDOBA",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 25,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CUNDINAMARCA",
         "region": "Centro Oriente",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 27,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CHOCÓ",
         "region": "Pacífico",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 41,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "HUILA",
         "region": "Centro Sur",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 44,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "LA GUAJIRA",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 47,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "MAGDALENA",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 50,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "META",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 52,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "NARIÑO",
         "region": "Pacífico",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 54,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "NORTE DE SANTANDER",
         "region": "Centro Oriente",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 63,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "QUINDIO",
         "region": "Eje Cafetero - Antioquia",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 66,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "RISARALDA",
         "region": "Eje Cafetero - Antioquia",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 68,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "SANTANDER",
         "region": "Centro Oriente",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 70,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "SUCRE",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 73,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "TOLIMA",
         "region": "Centro Sur",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 76,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "VALLE DEL CAUCA",
         "region": "Pacífico",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 81,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "ARAUCA",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 85,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "CASANARE",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 86,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "PUTUMAYO",
         "region": "Centro Sur",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 88,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
         "region": "Caribe",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 91,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "AMAZONAS",
         "region": "Centro Sur",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 94,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "GUAINÁ",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 95,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "GUAVIARE",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 97,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "VAUPÉS",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 },
 {
     "model": "departaments.department",
     "pk": 99,
     "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
         "name": "VICHADA",
         "region": "Llano",
-        "status": "Activo",
-        "created_at": "2023-08-08T17:01:26Z",
-        "updated_at": "2023-08-08T17:01:26Z",
-        "deleted_at": null
+        "status": "Activo"
     }
 }
 ]

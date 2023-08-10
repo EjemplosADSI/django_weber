@@ -1,12 +1,16 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from safedelete.models import SafeDeleteModel
+from safedelete.models import SOFT_DELETE_CASCADE
 
 from business.models import Busine
 from towns.models import Town
 from user_profile.models import UserProfile
 
 
-class Subsidiary(models.Model):
+class Subsidiary(SafeDeleteModel):
+    _safedelete_policy = SOFT_DELETE_CASCADE
+
     class Type(models.TextChoices):
         PRINCIPAL = 'Principal', _('Principal')
         SUBSEDE = 'Subsede', _('Subsede')
@@ -24,9 +28,6 @@ class Subsidiary(models.Model):
     phone = models.PositiveBigIntegerField(blank=True, null=True, verbose_name="Telefono")
     type = models.CharField(max_length=10, choices=Type.choices, default=Type.PRINCIPAL, verbose_name="Tipo")
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.ACTIVO, verbose_name="Estado")
-    created_at = models.DateTimeField(auto_now_add=True, null=True, verbose_name="Creacion", help_text="MM/DD/AAAA")
-    updated_at = models.DateTimeField(auto_now=True, null=True, verbose_name="Actualización", help_text="MM/DD/AAAA")
-    deleted_at = models.DateTimeField(null=True, verbose_name="Eliminacion", help_text="MM/DD/AAAA")
 
     class Meta:
         db_table = 'subsidiary'
