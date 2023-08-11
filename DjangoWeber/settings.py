@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,32 +21,41 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)(eu1y^a)y!6s)8xa%pmcrhy#rk^sy_+49yaye)k9%ce=5u)$@'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
 
-INSTALLED_APPS = [
-    'utils.apps.UtilsConfig',
-    'departments.apps.DepartamentsConfig',
-    'towns.apps.TownsConfig',
-    'business.apps.BusinessConfig',
-    'subsidiary.apps.SubsidiaryConfig',
-    'user_profile.apps.UserProfileConfig',
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_dump_load_utf8',
-    'safedelete',
 ]
+
+THIRD_PARTY_APPS = [
+    'safedelete',
+    'django_dump_die',
+    'django_dump_load_utf8',
+]
+
+LOCAL_APPS = [
+    'utils.apps.UtilsConfig',
+    'departments.apps.DepartamentsConfig',
+    'towns.apps.TownsConfig',
+    'business.apps.BusinessConfig',
+    'subsidiary.apps.SubsidiaryConfig',
+    'user_profile.apps.UserProfileConfig',
+]
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -119,9 +129,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'es-es'
+LANGUAGE_CODE = config('LANGUAGE_CODE')
 
-TIME_ZONE = 'America/Bogota'
+TIME_ZONE = config('TIME_ZONE')
 
 USE_I18N = True
 
