@@ -9,7 +9,6 @@ from user_profile.models import UserProfile
 
 
 class Subsidiary(SafeDeleteModel):
-    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Type(models.TextChoices):
         PRINCIPAL = 'Principal', _('Principal')
@@ -28,6 +27,7 @@ class Subsidiary(SafeDeleteModel):
     phone = models.PositiveBigIntegerField(blank=True, null=True, verbose_name="Telefono")
     type = models.CharField(max_length=10, choices=Type.choices, default=Type.PRINCIPAL, verbose_name="Tipo")
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.ACTIVO, verbose_name="Estado")
+    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Meta:
         db_table = 'subsidiary'

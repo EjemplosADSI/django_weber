@@ -1,0 +1,11 @@
+[
+{
+    "model": "user_profile.userprofile",
+    "pk": 1,
+    "fields": {
+        "name": "&Source",
+        "nit":  "1010101010",
+        "status":  "Activo"
+    }
+}
+]

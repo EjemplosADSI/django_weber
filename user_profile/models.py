@@ -9,7 +9,6 @@ from towns.models import Town
 
 
 class UserProfile(SafeDeleteModel):
-    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Gender(models.TextChoices):
         FEMENINO = 'Femenino', _('Femenino')
@@ -47,9 +46,7 @@ class UserProfile(SafeDeleteModel):
     role = models.CharField(max_length=10, choices=Role.choices, default=Role.CLIENTE, verbose_name="Rol")
     subsidiary_id = models.ForeignKey("subsidiary.Subsidiary", on_delete=models.CASCADE, verbose_name="Sucursal")
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.ACTIVO, verbose_name="Estado")
-    created_at = models.DateTimeField(auto_now_add=True, null=True, verbose_name="Creacion", help_text="MM/DD/AAAA")
-    updated_at = models.DateTimeField(auto_now=True, null=True, verbose_name="Actualización", help_text="MM/DD/AAAA")
-    deleted_at = models.DateTimeField(null=True, verbose_name="Eliminacion", help_text="MM/DD/AAAA")
+    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Meta:
         db_table = 'user_info'

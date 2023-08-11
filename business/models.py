@@ -5,7 +5,6 @@ from safedelete.models import SOFT_DELETE_CASCADE
 
 
 class Busine(SafeDeleteModel):
-    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Status(models.TextChoices):
         ACTIVO = 'Activo', _('Activo')
@@ -14,6 +13,7 @@ class Busine(SafeDeleteModel):
     name = models.CharField(max_length=80, verbose_name="Nombre")
     nit = models.PositiveIntegerField(unique=True, verbose_name="NIT")
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.ACTIVO, verbose_name="Estado")
+    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Meta:
         db_table = 'business'

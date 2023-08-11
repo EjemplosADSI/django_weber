@@ -7,7 +7,6 @@ from departaments.models import Department
 
 
 class Town(SafeDeleteModel):
-    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Status(models.TextChoices):
         ACTIVO = 'Activo', _('Activo')
@@ -17,6 +16,7 @@ class Town(SafeDeleteModel):
     department = models.ForeignKey(Department, on_delete=models.CASCADE, verbose_name="Departamento")
     shortened = models.CharField(max_length=40, blank=True, null=True, verbose_name="Acortado")
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.ACTIVO, verbose_name="Estado")
+    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Meta:
         db_table = 'towns'

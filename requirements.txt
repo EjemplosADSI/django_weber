@@ -1,4 +1,0 @@
-django
-mysqlclient
-django-safedelete
-django-dump-load-utf8

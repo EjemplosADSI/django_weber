@@ -6,7 +6,6 @@ from safedelete.models import SOFT_DELETE_CASCADE
 
 # Create your models here.
 class Department(SafeDeleteModel):
-    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Region(models.TextChoices):
         CARIBE = 'Caribe', _('Caribe')
@@ -24,6 +23,7 @@ class Department(SafeDeleteModel):
     name = models.CharField(max_length=90, unique=True, verbose_name="Nombre")
     region = models.CharField(max_length=30, choices=Region.choices, verbose_name="Región")
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.ACTIVO, verbose_name="Estado")
+    _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Meta:
         db_table = 'departments'

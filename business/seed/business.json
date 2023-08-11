@@ -3,9 +3,11 @@
     "model": "business.busine",
     "pk": 1,
     "fields": {
-        "name": "&Source",
-        "nit":  "1010101010",
-        "status":  "Activo"
+        "deleted": null,
+        "deleted_by_cascade": false,
+        "name": "Microsoft",
+        "nit": 3843784,
+        "status": "Activo"
     }
 }
 ]
