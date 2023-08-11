@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'utils.apps.UtilsConfig',
-    'departaments.apps.DepartamentsConfig',
+    'departments.apps.DepartamentsConfig',
     'towns.apps.TownsConfig',
     'business.apps.BusinessConfig',
     'subsidiary.apps.SubsidiaryConfig',

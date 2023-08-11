@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from safedelete.models import SafeDeleteModel
 from safedelete.models import SOFT_DELETE_CASCADE
 
-from departaments.models import Department
+from departments.models import Department
 
 
 class Town(SafeDeleteModel):
