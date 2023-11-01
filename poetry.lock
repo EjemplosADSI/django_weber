@@ -18,6 +18,17 @@ typing-extensions = {version = ">=4", markers = "python_version < \"3.11\""}
 tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 
 [[package]]
+name = "colorama"
+version = "0.4.6"
+description = "Cross-platform colored terminal text."
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+files = [
+    {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
+    {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
+]
+
+[[package]]
 name = "django"
 version = "4.2.4"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -38,6 +49,54 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-appconf"
+version = "1.0.5"
+description = "A helper class for handling configuration defaults of packaged apps gracefully."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "django-appconf-1.0.5.tar.gz", hash = "sha256:be3db0be6c81fa84742000b89a81c016d70ae66a7ccb620cdef592b1f1a6aaa4"},
+    {file = "django_appconf-1.0.5-py3-none-any.whl", hash = "sha256:ae9f864ee1958c815a965ed63b3fba4874eec13de10236ba063a788f9a17389d"},
+]
+
+[package.dependencies]
+django = "*"
+
+[[package]]
+name = "django-compressor"
+version = "4.4"
+description = "('Compresses linked and inline JavaScript or CSS into single cached files.',)"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django_compressor-4.4-py2.py3-none-any.whl", hash = "sha256:6e2b0c0becb9607f5099c2546a824c5b84a6918a34bc37a8a622ffa250313596"},
+    {file = "django_compressor-4.4.tar.gz", hash = "sha256:1b0acc9cfba9f69bc38e7c41da9b0d70a20bc95587b643ffef9609cf46064f67"},
+]
+
+[package.dependencies]
+django-appconf = ">=1.0.3"
+rcssmin = "1.1.1"
+rjsmin = "1.2.1"
+
+[[package]]
+name = "django-dump-die"
+version = "0.1.5"
+description = "A Django app to add Laravel/Symfony-like dump and die functionality."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "django-dump-die-0.1.5.tar.gz", hash = "sha256:bdf20104c5a372ca04f27d25b87e9bdaf03ca033cc01eae70f3cf7f7ffa72396"},
+    {file = "django_dump_die-0.1.5-py3-none-any.whl", hash = "sha256:7d1b93421279bcaf6e72c55900221061c2c45874ba5a073649a48292ff95c78f"},
+]
+
+[package.dependencies]
+django = ">=3.0.0"
+
+[package.extras]
+dev = ["black", "coverage", "pylint", "pylint-django"]
+doc = ["doc8", "esbonio", "pip-tools", "rstcheck", "sphinx", "sphinx-autobuild", "sphinx-rtd-theme"]
+
+[[package]]
 name = "django-dump-load-utf8"
 version = "0.0.4"
 description = "Django command dumpdatautf8 and loaddatautf8"
@@ -47,22 +106,6 @@ files = [
     {file = "django-dump-load-utf8-0.0.4.tar.gz", hash = "sha256:963b8428803551007a53770aa60ceb9b02a59ec22c7a56b7aacda811772f2d17"},
     {file = "django_dump_load_utf8-0.0.4-py3-none-any.whl", hash = "sha256:9f2002ab5eba55b5c4230667b6a7144a5a6aad9da89ee6f5b8bd323b00548110"},
 ]
-
-[[package]]
-name = "django-environ"
-version = "0.10.0"
-description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
-optional = false
-python-versions = ">=3.5,<4"
-files = [
-    {file = "django-environ-0.10.0.tar.gz", hash = "sha256:b3559a91439c9d774a9e0c1ced872364772c612cdf6dc919506a2b13f7a77225"},
-    {file = "django_environ-0.10.0-py2.py3-none-any.whl", hash = "sha256:510f8c9c1d0a38b0815f91504270c29440a0cf44fab07f55942fa8d31bbb9be6"},
-]
-
-[package.extras]
-develop = ["coverage[toml] (>=5.0a4)", "furo (>=2021.8.17b43,<2021.9.dev0)", "pytest (>=4.6.11)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
-docs = ["furo (>=2021.8.17b43,<2021.9.dev0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
-testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
 
 [[package]]
 name = "django-safedelete"
@@ -77,6 +120,31 @@ files = [
 
 [package.dependencies]
 Django = "*"
+
+[[package]]
+name = "exceptiongroup"
+version = "1.1.2"
+description = "Backport of PEP 654 (exception groups)"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.1.2-py3-none-any.whl", hash = "sha256:e346e69d186172ca7cf029c8c1d16235aa0e04035e5750b4b95039e65204328f"},
+    {file = "exceptiongroup-1.1.2.tar.gz", hash = "sha256:12c3e887d6485d16943a309616de20ae5582633e0a2eda17f4e10fd61c1e8af5"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
+
+[[package]]
+name = "iniconfig"
+version = "2.0.0"
+description = "brain-dead simple config-ini parsing"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "iniconfig-2.0.0-py3-none-any.whl", hash = "sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"},
+    {file = "iniconfig-2.0.0.tar.gz", hash = "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3"},
+]
 
 [[package]]
 name = "mysqlclient"
@@ -95,6 +163,158 @@ files = [
 ]
 
 [[package]]
+name = "packaging"
+version = "23.1"
+description = "Core utilities for Python packages"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "packaging-23.1-py3-none-any.whl", hash = "sha256:994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61"},
+    {file = "packaging-23.1.tar.gz", hash = "sha256:a392980d2b6cffa644431898be54b0045151319d1e7ec34f0cfed48767dd334f"},
+]
+
+[[package]]
+name = "pastel"
+version = "0.2.1"
+description = "Bring colors to your terminal."
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+files = [
+    {file = "pastel-0.2.1-py2.py3-none-any.whl", hash = "sha256:4349225fcdf6c2bb34d483e523475de5bb04a5c10ef711263452cb37d7dd4364"},
+    {file = "pastel-0.2.1.tar.gz", hash = "sha256:e6581ac04e973cac858828c6202c1e1e81fee1dc7de7683f3e1ffe0bfd8a573d"},
+]
+
+[[package]]
+name = "pluggy"
+version = "1.2.0"
+description = "plugin and hook calling mechanisms for python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pluggy-1.2.0-py3-none-any.whl", hash = "sha256:c2fd55a7d7a3863cba1a013e4e2414658b1d07b6bc57b3919e0c63c9abb99849"},
+    {file = "pluggy-1.2.0.tar.gz", hash = "sha256:d12f0c4b579b15f5e054301bb226ee85eeeba08ffec228092f8defbaa3a4c4b3"},
+]
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "poethepoet"
+version = "0.21.1"
+description = "A task runner that works well with poetry."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "poethepoet-0.21.1-py3-none-any.whl", hash = "sha256:c79b2aefc889c4490db9d64ecc1896db78700aa212b8c5f0bca4aee0395e7714"},
+    {file = "poethepoet-0.21.1.tar.gz", hash = "sha256:39d754f53714545a23cfc94b122deaf3548218b6e35b453c30973c5598719e9f"},
+]
+
+[package.dependencies]
+pastel = ">=0.2.1,<0.3.0"
+tomli = ">=1.2.2"
+
+[package.extras]
+poetry-plugin = ["poetry (>=1.0,<2.0)"]
+
+[[package]]
+name = "pytest"
+version = "7.4.0"
+description = "pytest: simple powerful testing with Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pytest-7.4.0-py3-none-any.whl", hash = "sha256:78bf16451a2eb8c7a2ea98e32dc119fd2aa758f1d5d66dbf0a59d69a3969df32"},
+    {file = "pytest-7.4.0.tar.gz", hash = "sha256:b4bf8c45bd59934ed84001ad51e11b4ee40d40a1229d2c79f9c592b0a3f6bd8a"},
+]
+
+[package.dependencies]
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
+exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
+iniconfig = "*"
+packaging = "*"
+pluggy = ">=0.12,<2.0"
+tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
+
+[package.extras]
+testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
+
+[[package]]
+name = "python-decouple"
+version = "3.8"
+description = "Strict separation of settings from code."
+optional = false
+python-versions = "*"
+files = [
+    {file = "python-decouple-3.8.tar.gz", hash = "sha256:ba6e2657d4f376ecc46f77a3a615e058d93ba5e465c01bbe57289bfb7cce680f"},
+    {file = "python_decouple-3.8-py3-none-any.whl", hash = "sha256:d0d45340815b25f4de59c974b855bb38d03151d81b037d9e3f463b0c9f8cbd66"},
+]
+
+[[package]]
+name = "rcssmin"
+version = "1.1.1"
+description = "CSS Minifier"
+optional = false
+python-versions = "*"
+files = [
+    {file = "rcssmin-1.1.1-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:d4e263fa9428704fd94c2cb565c7519ca1d225217943f71caffe6741ab5b9df1"},
+    {file = "rcssmin-1.1.1-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:c7278c1c25bb90d8e554df92cfb3b6a1195004ead50f764653d3093933ee0877"},
+    {file = "rcssmin-1.1.1-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:f15673e97f0a68b4c378c4d15b088fe96d60bc106d278c88829923118833c20f"},
+    {file = "rcssmin-1.1.1-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:d0afc6e7b64ef30d6dcde88830ec1a237b9f16a39f920a8fd159928684ccf8db"},
+    {file = "rcssmin-1.1.1-cp310-cp310-manylinux1_i686.whl", hash = "sha256:705c9112d0ed54ea40aecf97e7fd29bdf0f1c46d278a32d8f957f31dde90778a"},
+    {file = "rcssmin-1.1.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:f7a1fcdbafaacac0530da04edca4a44303baab430ea42e7d59aece4b3f3e9a51"},
+    {file = "rcssmin-1.1.1-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:cf74d7ea5e191f0f344b354eed8b7c83eeafbd9a97bec3a579c3d26edf11b005"},
+    {file = "rcssmin-1.1.1-cp311-cp311-manylinux1_i686.whl", hash = "sha256:908fe072efd2432fb0975a61124609a8e05021367f6a3463d45f5e3e74c4fdda"},
+    {file = "rcssmin-1.1.1-cp311-cp311-manylinux1_x86_64.whl", hash = "sha256:35da6a6999e9e2c5b0e691b42ed56cc479373e0ecab33ef5277dfecce625e44a"},
+    {file = "rcssmin-1.1.1-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:e923c105100ab70abde1c01d3196ddd6b07255e32073685542be4e3a60870c8e"},
+    {file = "rcssmin-1.1.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:868215e1fd0e92a6122e0ed5973dfc7bb8330fe1e92274d05b2585253b38c0ca"},
+    {file = "rcssmin-1.1.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:c7728e3b546b1b6ea08cab721e8e21409dbcc11b881d0b87d10b0be8930af2a2"},
+    {file = "rcssmin-1.1.1-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:271e3d2f8614a6d4637ed8fff3d90007f03e2a654cd9444f37d888797662ba72"},
+    {file = "rcssmin-1.1.1-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:42576d95dfad53d77df2e68dfdec95b89b10fad320f241f1af3ca1438578254a"},
+    {file = "rcssmin-1.1.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:79421230dd67c37ec61ed9892813d2b839b68f2f48ef55c75f976e81701d60b4"},
+    {file = "rcssmin-1.1.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:8fcfd10ae2a1c4ce231a33013f2539e07c3836bf17cc945cc25cc30bf8e68e45"},
+    {file = "rcssmin-1.1.1-cp38-cp38-manylinux1_i686.whl", hash = "sha256:c30f8bc839747b6da59274e0c6e4361915d66532e26448d589cb2b1846d7bf11"},
+    {file = "rcssmin-1.1.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:ee386bec6d62f8c814d65c011d604a7c82d24aa3f718facd66e850eea8d6a5a1"},
+    {file = "rcssmin-1.1.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:8a26fec3c1e6b7a3765ccbaccc20fbb5c0ed3422cc381e01a2607f08d7621c44"},
+    {file = "rcssmin-1.1.1-cp39-cp39-manylinux1_i686.whl", hash = "sha256:a04d58a2a21e9a089306d3f99c4b12bf5b656a79c198ef2321e80f8fd9afab06"},
+    {file = "rcssmin-1.1.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:914e589f40573035006913861ed2adc28fbe70082a8b6bff5be7ee430b7b5c2e"},
+    {file = "rcssmin-1.1.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:a417735d4023d47d048a6288c88dbceadd20abaaf65a11bb4fda1e8458057019"},
+    {file = "rcssmin-1.1.1.tar.gz", hash = "sha256:4f9400b4366d29f5f5446f58e78549afa8338e6a59740c73115e9f6ac413dc64"},
+]
+
+[[package]]
+name = "rjsmin"
+version = "1.2.1"
+description = "Javascript Minifier"
+optional = false
+python-versions = "*"
+files = [
+    {file = "rjsmin-1.2.1-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:35827844d2085bd59d34214dfba6f1fc42a215c455887437b07dbf9c73019cc1"},
+    {file = "rjsmin-1.2.1-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:812af25c08d6a5ae98019a2e1b47ebb47f7469abd351670c353d619eaeae4064"},
+    {file = "rjsmin-1.2.1-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:b8464629a18fe69f70677854c93a3707976024b226a0ce62707c618f923e1346"},
+    {file = "rjsmin-1.2.1-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:bd1faedc425006d9e86b23837d164f01d105b7a8b66b767a9766d0014773db2a"},
+    {file = "rjsmin-1.2.1-cp310-cp310-manylinux1_i686.whl", hash = "sha256:99c074cd6a8302ff47118a9c3d086f89328dc8e5c4b105aa1f348fb85c765a30"},
+    {file = "rjsmin-1.2.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:bc5bc2f94e59bc81562c572b7f1bdd6bcec4f61168dc68a2993bad2d355b6e19"},
+    {file = "rjsmin-1.2.1-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:35f21046504544e2941e04190ce24161255479133751550e36ddb3f4af0ecdca"},
+    {file = "rjsmin-1.2.1-cp311-cp311-manylinux1_i686.whl", hash = "sha256:ca90630b84fe94bb07739c3e3793e87d30c6ee450dde08653121f0d9153c8d0d"},
+    {file = "rjsmin-1.2.1-cp311-cp311-manylinux1_x86_64.whl", hash = "sha256:7dd58b5ed88233bc61dc80b0ed87b93a1786031d9977c70d335221ef1ac5581a"},
+    {file = "rjsmin-1.2.1-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:f0895b360dccf7e2d6af8762a52985e3fbaa56778de1bf6b20dbc96134253807"},
+    {file = "rjsmin-1.2.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:747bc9d3bc8a220f40858e6aad50b2ae2eb7f69c924d4fa3803b81be1c1ddd02"},
+    {file = "rjsmin-1.2.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:f7cd33602ec0f393a0058e883284496bb4dbbdd34e0bbe23b594c8933ddf9b65"},
+    {file = "rjsmin-1.2.1-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:3453ee6d5e7a2723ec45c2909e2382371783400e8d51952b692884c6d850a3d0"},
+    {file = "rjsmin-1.2.1-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:8c340e251619c97571a5ade20f147f1f7e8664f66a2d6d7319e05e3ef6a4423c"},
+    {file = "rjsmin-1.2.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:145c6af8df42d8af102d0d39a6de2e5fa66aef9e38947cfb9d65377d1b9940b2"},
+    {file = "rjsmin-1.2.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:bbd7a0abaa394afd951f5d4e05249d306fec1c9674bfee179787674dddd0bdb7"},
+    {file = "rjsmin-1.2.1-cp38-cp38-manylinux1_i686.whl", hash = "sha256:eb770aaf637919b0011c4eb87b9ac6317079fb9800eb17c90dda05fc9de4ebc3"},
+    {file = "rjsmin-1.2.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:5d67ec09da46a492186e35cabca02a0d092eda5ef5b408a419b99ee4acf28d5c"},
+    {file = "rjsmin-1.2.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:d332e44a1b21ad63401cc7eebc81157e3d982d5fb503bb4faaea5028068d71e9"},
+    {file = "rjsmin-1.2.1-cp39-cp39-manylinux1_i686.whl", hash = "sha256:113132a40ce7d03b2ced4fac215f0297338ed1c207394b739266efab7831988b"},
+    {file = "rjsmin-1.2.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:122aa52bcf7ad9f12728d309012d1308c6ecfe4d6b09ea867a110dcad7b7728c"},
+    {file = "rjsmin-1.2.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:8a6710e358c661dcdcfd027e67de3afd72a6af4c88101dcf110de39e9bbded39"},
+    {file = "rjsmin-1.2.1.tar.gz", hash = "sha256:1f982be8e011438777a94307279b40134a3935fc0f079312ee299725b8af5411"},
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -109,6 +329,17 @@ files = [
 dev = ["build", "flake8"]
 doc = ["sphinx"]
 test = ["pytest", "pytest-cov"]
+
+[[package]]
+name = "tomli"
+version = "2.0.1"
+description = "A lil' TOML parser"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
+    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
+]
 
 [[package]]
 name = "typing-extensions"
@@ -135,4 +366,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e5b479ffe27e98b1f4dea1ade75168797440b58f13a4e0728c0b6b8321042738"
+content-hash = "6cca91d0d178a60b8de40db0069e467d53e2e8aa0198c5f0705a5ae238c025a4"

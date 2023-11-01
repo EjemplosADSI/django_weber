@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('departaments', '0001_initial'),
+        ('departments', '0001_initial'),
     ]
 
     operations = [
@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=90, verbose_name='Nombre')),
                 ('shortened', models.CharField(blank=True, max_length=40, null=True, verbose_name='Acortado')),
                 ('status', models.CharField(choices=[('Activo', 'Activo'), ('Inactivo', 'Inactivo')], default='Activo', max_length=10, verbose_name='Estado')),
-                ('department', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='departaments.department', verbose_name='Departamento')),
+                ('department', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='departments.department', verbose_name='Departamento')),
             ],
             options={
                 'verbose_name': 'Municipio',

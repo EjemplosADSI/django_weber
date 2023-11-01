@@ -1,2 +1,22 @@
 [
+{
+    "model": "user_profile.userprofile",
+    "pk": 1,
+    "fields": {
+        "deleted": null,
+        "deleted_by_cascade": false,
+        "user": 1,
+        "photo": "default.jpg",
+        "gender": "Masculino",
+        "document_type": "Cédula de Ciudadanía",
+        "document": 1057582244,
+        "phone": 3118864151,
+        "address": "Casa alisos",
+        "town_id": 15759,
+        "birth_date": "1989-09-03",
+        "role": "Admin",
+        "subsidiary_id": 1,
+        "status": "Activo"
+    }
+}
 ]

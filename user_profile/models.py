@@ -49,7 +49,7 @@ class UserProfile(SafeDeleteModel):
     _safedelete_policy = SOFT_DELETE_CASCADE
 
     class Meta:
-        db_table = 'user_info'
+        db_table = 'user_profile'
         unique_together = ('id',)
         indexes = [
             models.Index(fields=['town_id'], name='fk_usuarios_municipios1_idx'),

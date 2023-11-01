@@ -1,20 +1,56 @@
 [tool.poetry]
 name = "djangoweber"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "Paquete de ejemplo de proyecto en django."
 authors = ["Diego Alonso Ojeda Medina <daom89@gmail.com>"]
 readme = "README.md"
-packages = [{include = "django_weber"}]
+license = "MIT"
+packages = [{include = "utils"}]
+repository = "https://github.com/EjemplosADSI/django_weber"
+keywords = ["django", "web", "weber", "inventarios"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+python-decouple = "^3.8"
 django = "^4.2.4"
-mysqlclient = "^2.2.0"
-django-safedelete = "^1.3.2"
+django-dump-die = "^0.1.5"
 django-dump-load-utf8 = "^0.0.4"
-django-environ = "^0.10.0"
+django-safedelete = "^1.3.2"
+mysqlclient = "^2.2.0"
+poethepoet = "^0.21.1"
+django-compressor = "^4.4"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks.createsuperuser]
+cmd  = "poetry run python manage.py createsuperuser"
+help = "Ejecutar createsuperuser"
+
+[tool.poe.tasks.makemigrations]
+cmd  = "poetry run python manage.py makemigrations"
+help = "Ejecutar makemigrations"
+
+[tool.poe.tasks.migrate]
+cmd  = "poetry run python manage.py migrate"
+help = "Ejecutar migrate"
+
+[tool.poe.tasks.fixtures-load]
+cmd  = "poetry run python manage.py loadall"
+help = "Cargar fixtures"
+
+[tool.poe.tasks.fixtures-export]
+cmd  = "poetry run python manage.py exportall"
+help = "Cargar fixtures"
+
+[tool.poe.tasks.runserver]
+cmd  = "poetry run python manage.py runserver"
+help = "Ejecutar runserver"
+
+[tool.poe.tasks.dbreload]
+sequence = ["makemigrations", "migrate", "fixtures-load"]
+help     = "Migrar y Sembrar Base de Datos"

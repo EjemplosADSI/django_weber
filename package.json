@@ -1,0 +1,54 @@
+{
+  "name": "djangoweber",
+  "version": "1.0.0",
+  "description": "Ejemplo de Django Web",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "sass --style=compressed resources/scss/:static/css/",
+    "buildjs": "uglifyjs-folder resources/js/ -eo static/js/",
+    "build": "npm run buildcss & npm run buildjs",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EjemplosADSI/django_weber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EjemplosADSI/django_weber/issues"
+  },
+  "homepage": "https://github.com/EjemplosADSI/django_weber#readme",
+  "keywords": [
+    "weber",
+    "ejemplo",
+    "python",
+    "django",
+    "inventarios"
+  ],
+  "watch": {
+    "build": {
+      "patterns": [
+        "resources"
+      ],
+      "extensions": "js,scss"
+    }
+  },
+  "author": {
+    "name": "Diego Alonso Ojeda Medina",
+    "email": "daom89@gmail.com",
+    "url": "https://github.com/EjemplosADSI/django_weber"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "flowbite": "^1.8.1",
+    "npm-watch": "^0.11.0",
+    "sass": "^1.63.6",
+    "sass-lint": "^1.13.1",
+    "uglify-js": "^3.17.4",
+    "uglifyjs-folder": "^3.3.0",
+    "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
